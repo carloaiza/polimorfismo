@@ -37,7 +37,7 @@ public class Formula1 extends Competencia implements Serializable
         this.nombre = nombre;
     }    
 
-    }
+    
 
     public void setNumeroVehiculo(String numeroVehiculo) {
         this.numeroVehiculo = numeroVehiculo;
