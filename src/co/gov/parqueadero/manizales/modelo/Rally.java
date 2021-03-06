@@ -11,24 +11,29 @@ import java.io.Serializable;
  *
  * @author USUARIO
  */
-public class Rally extends Competencia implements Serializable{
+public class Rally extends Competencia implements Serializable
+{
     private String nombreCopiloto;
 
-    public Rally(String nombreCopiloto, String escuderia, String numeroChasis, String color, String numeroMotor) {
+    public Rally(String nombreCopiloto, String escuderia, String numeroChasis, String color, String numeroMotor) 
+    {
         super(escuderia, numeroChasis, color, numeroMotor);
         this.nombreCopiloto = nombreCopiloto;
     }
 
-    public String getNombreCopiloto() {
+    public String getNombreCopiloto() 
+    {
         return nombreCopiloto;
     }
 
-    public void setNombreCopiloto(String nombreCopiloto) {
+    public void setNombreCopiloto(String nombreCopiloto) 
+    {
         this.nombreCopiloto = nombreCopiloto;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Rally{" + "nombreCopiloto=" + nombreCopiloto + '}';
     }
     
