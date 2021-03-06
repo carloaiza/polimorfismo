@@ -13,27 +13,25 @@ import java.io.Serializable;
  */
 public class Formula1 extends Competencia implements Serializable
 {
-   private String  numero;
+   private String  numeroVehiculo;
 
-    public Formula1(String numero, String escuderia, String numeroChasis, String color, String numeroMotor)
-    {
+    public Formula1(String numeroVehiculo, String escuderia, String numeroChasis, String color, String numeroMotor) {
         super(escuderia, numeroChasis, color, numeroMotor);
-        this.numero = numero;
+        this.numeroVehiculo = numeroVehiculo;
     }
 
-    public String getNumero() 
-    {
-        return numero;
+    public String getNumeroVehiculo() {
+        return numeroVehiculo;
     }
 
-    public void setNumero(String numero) 
-    {
-        this.numero = numero;
+    public void setNumeroVehiculo(String numeroVehiculo) {
+        this.numeroVehiculo = numeroVehiculo;
     }
 
     @Override
-    public String toString() 
-    {
-        return "Formula1{" + "numero=" + numero + '}';
-    }   
+    public String toString() {
+        return "Formula1{" + "numeroVehiculo=" + numeroVehiculo + '}';
+    }
+
+   
 }
