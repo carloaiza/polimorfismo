@@ -11,37 +11,41 @@ import java.io.Serializable;
  *
  * @author USUARIO
  */
-public class Moto extends Competencia implements Serializable{
+public class Moto extends Competencia implements Serializable
+{
     private String numero;
     private short cilindraje;
 
-    public Moto(String numero, short cilindraje, String escuderia, String numeroChasis, String color, String numeroMotor) {
+    public Moto(String numero, short cilindraje, String escuderia, String numeroChasis, String color, String numeroMotor) 
+    {
         super(escuderia, numeroChasis, color, numeroMotor);
         this.numero = numero;
         this.cilindraje = cilindraje;
     }
 
-    public String getNumero() {
+    public String getNumero() 
+    {
         return numero;
     }
 
-    public void setNumero(String numero) {
+    public void setNumero(String numero) 
+    {
         this.numero = numero;
     }
 
-    public short getCilindraje() {
+    public short getCilindraje() 
+    {
         return cilindraje;
     }
 
-    public void setCilindraje(short cilindraje) {
+    public void setCilindraje(short cilindraje) 
+    {
         this.cilindraje = cilindraje;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Moto{" + "numero=" + numero + ", cilindraje=" + cilindraje + '}';
-    }
-    
-    
-    
+    } 
 }

@@ -11,37 +11,41 @@ import java.io.Serializable;
  *
  * @author carloaiza
  */
-public class Taxi extends TransportePublico implements Serializable{
+public class Taxi extends TransportePublico implements Serializable
+{
     private double valorCupo;
     private String tipoOperacion;
 
-    public Taxi(double valorCupo, String tipoOperacion, short numeroPasajeros, float capacidad, String tipoCarroceria, String placa, String numeroChasis, String color, String numeroMotor) {
+    public Taxi(double valorCupo, String tipoOperacion, short numeroPasajeros, float capacidad, String tipoCarroceria, String placa, String numeroChasis, String color, String numeroMotor) 
+    {
         super(numeroPasajeros, capacidad, tipoCarroceria, placa, numeroChasis, color, numeroMotor);
         this.valorCupo = valorCupo;
         this.tipoOperacion = tipoOperacion;
     }
 
-    public double getValorCupo() {
+    public double getValorCupo() 
+    {
         return valorCupo;
     }
 
-    public void setValorCupo(double valorCupo) {
+    public void setValorCupo(double valorCupo) 
+    {
         this.valorCupo = valorCupo;
     }
 
-    public String getTipoOperacion() {
+    public String getTipoOperacion() 
+    {
         return tipoOperacion;
     }
 
-    public void setTipoOperacion(String tipoOperacion) {
+    public void setTipoOperacion(String tipoOperacion) 
+    {
         this.tipoOperacion = tipoOperacion;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Taxi{" + "valorCupo=" + valorCupo + ", tipoOperacion=" + tipoOperacion + '}';
-    }
-    
-    
-    
+    }  
 }

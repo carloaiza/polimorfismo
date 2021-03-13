@@ -11,48 +11,52 @@ import java.io.Serializable;
  *
  * @author carloaiza
  */
-public class Vehiculo extends Object implements Serializable{
+public class Vehiculo extends Object implements Serializable
+{
     private String numeroChasis;
     private String color;
     private String numeroMotor;
 
-    public Vehiculo(String numeroChasis, String color, String numeroMotor) {
+    public Vehiculo(String numeroChasis, String color, String numeroMotor) 
+    {
         this.numeroChasis = numeroChasis;
         this.color = color;
         this.numeroMotor = numeroMotor;
     }
 
-    public String getNumeroChasis() {
+    public String getNumeroChasis() 
+    {
         return numeroChasis;
     }
 
-    public void setNumeroChasis(String numeroChasis) {
+    public void setNumeroChasis(String numeroChasis) 
+    {
         this.numeroChasis = numeroChasis;
     }
 
-    public String getColor() {
+    public String getColor() 
+    {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(String color) 
+    {
         this.color = color;
     }
 
-    public String getNumeroMotor() {
+    public String getNumeroMotor() 
+    {
         return numeroMotor;
     }
 
-    public void setNumeroMotor(String numeroMotor) {
+    public void setNumeroMotor(String numeroMotor) 
+    {
         this.numeroMotor = numeroMotor;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Vehiculo{" + "numeroChasis=" + numeroChasis + ", color=" + color + ", numeroMotor=" + numeroMotor + '}';
-    }
-
-   
-
-       
-    
+    }   
 }
