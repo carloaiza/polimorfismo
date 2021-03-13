@@ -11,26 +11,29 @@ import java.io.Serializable;
  *
  * @author carloaiza
  */
-public class TransportePublico extends Transporte implements Serializable{
+public class TransportePublico extends Transporte implements Serializable
+{
     private short numeroPasajeros;
 
-    public TransportePublico(short numeroPasajeros, float capacidad, String tipoCarroceria, String placa, String numeroChasis, String color, String numeroMotor) {
+    public TransportePublico(short numeroPasajeros, float capacidad, String tipoCarroceria, String placa, String numeroChasis, String color, String numeroMotor) 
+    {
         super(capacidad, tipoCarroceria, placa, numeroChasis, color, numeroMotor);
         this.numeroPasajeros = numeroPasajeros;
     }
 
-    public short getNumeroPasajeros() {
+    public short getNumeroPasajeros() 
+    {
         return numeroPasajeros;
     }
 
-    public void setNumeroPasajeros(short numeroPasajeros) {
+    public void setNumeroPasajeros(short numeroPasajeros) 
+    {
         this.numeroPasajeros = numeroPasajeros;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "TransportePublico{" + "numeroPasajeros=" + numeroPasajeros + '}';
     }
-    
-    
 }

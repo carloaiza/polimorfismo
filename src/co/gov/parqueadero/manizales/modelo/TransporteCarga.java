@@ -11,41 +11,42 @@ import java.io.Serializable;
  *
  * @author carloaiza
  */
-public class TransporteCarga extends Transporte implements Serializable{
+public class TransporteCarga extends Transporte implements Serializable
+{
     
     private String transportadora;
     private boolean registroMinisterio;
 
-    public TransporteCarga(String transportadora, boolean registroMinisterio, 
-            float capacidad, String tipoCarroceria, String placa, 
-            String numeroChasis, String color, String numeroMotor) {
+    public TransporteCarga(String transportadora, boolean registroMinisterio,float capacidad, String tipoCarroceria, String placa, String numeroChasis, String color, String numeroMotor) 
+    {
         super(capacidad, tipoCarroceria, placa, numeroChasis, color, numeroMotor);
         this.transportadora = transportadora;
         this.registroMinisterio = registroMinisterio;
     }
 
-    public String getTransportadora() {
+    public String getTransportadora() 
+    {
         return transportadora;
     }
 
-    public void setTransportadora(String transportadora) {
+    public void setTransportadora(String transportadora) 
+    {
         this.transportadora = transportadora;
     }
 
-    public boolean isRegistroMinisterio() {
+    public boolean isRegistroMinisterio() 
+    {
         return registroMinisterio;
     }
 
-    public void setRegistroMinisterio(boolean registroMinisterio) {
+    public void setRegistroMinisterio(boolean registroMinisterio) 
+    {
         this.registroMinisterio = registroMinisterio;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Carga{" + "transportadora=" + transportadora + ", registroMinisterio=" + registroMinisterio + '}';
-    }
-
-    
-    
-    
+    }    
 }

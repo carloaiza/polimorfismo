@@ -23,7 +23,8 @@ public class Formula1 extends Competencia implements Serializable
         this.nombre = nombre;
     }
 
-    public String getNumeroVehiculo() {
+    public String getNumeroVehiculo() 
+    {
         return numeroVehiculo;
     }
     
@@ -37,16 +38,14 @@ public class Formula1 extends Competencia implements Serializable
         this.nombre = nombre;
     }    
 
-    
-
-    public void setNumeroVehiculo(String numeroVehiculo) {
+    public void setNumeroVehiculo(String numeroVehiculo) 
+    {
         this.numeroVehiculo = numeroVehiculo;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Formula1{" + "numeroVehiculo=" + numeroVehiculo + "nombre:"+this.nombre+'}';
     }
-
-   
 }

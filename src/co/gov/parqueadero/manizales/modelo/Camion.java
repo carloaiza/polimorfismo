@@ -11,26 +11,30 @@ import java.io.Serializable;
  *
  * @author carloaiza
  */
-public class Camion extends TransporteCarga implements Serializable{
+public class Camion extends TransporteCarga implements Serializable
+{
     private byte numeroEjes;
 
-    public Camion(byte numeroEjes, String transportadora, boolean registroMinisterio, float capacidad, String tipoCarroceria, String placa, String numeroChasis, String color, String numeroMotor) {
+    public Camion(byte numeroEjes, String transportadora, boolean registroMinisterio, float capacidad, String tipoCarroceria, String placa, String numeroChasis, String color, String numeroMotor) 
+    {
         super(transportadora, registroMinisterio, capacidad, tipoCarroceria, placa, numeroChasis, color, numeroMotor);
         this.numeroEjes = numeroEjes;
     }
 
-    public byte getNumeroEjes() {
+    public byte getNumeroEjes() 
+    {
         return numeroEjes;
     }
 
-    public void setNumeroEjes(byte numeroEjes) {
+    public void setNumeroEjes(byte numeroEjes) 
+    {
         this.numeroEjes = numeroEjes;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Camion{" + "numeroEjes=" + numeroEjes + '}';
     }
-    
-    
+       
 }

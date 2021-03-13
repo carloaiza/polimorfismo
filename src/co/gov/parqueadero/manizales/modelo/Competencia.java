@@ -11,27 +11,30 @@ import java.io.Serializable;
  *
  * @author carloaiza
  */
-public class Competencia extends Vehiculo implements Serializable{
+public class Competencia extends Vehiculo implements Serializable
+{
     private String escuderia;
 
-    public Competencia(String escuderia, String numeroChasis, String color, String numeroMotor) {
+    public Competencia(String escuderia, String numeroChasis, String color, String numeroMotor) 
+    {
         super(numeroChasis, color, numeroMotor);
         this.escuderia = escuderia;
     }
 
-    public String getEscuderia() {
+    public String getEscuderia() 
+    {
         return escuderia;
     }
 
-    public void setEscuderia(String escuderia) {
+    public void setEscuderia(String escuderia) 
+    {
         this.escuderia = escuderia;
     }
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return "Competencia{" + "escuderia=" + escuderia + '}';
     }
-    
-    
-    
+      
 }

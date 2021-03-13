@@ -35,7 +35,5 @@ public class Rally extends Competencia implements Serializable
     public String toString() 
     {
         return "Rally{" + "nombreCopiloto=" + nombreCopiloto + '}';
-    }
-    
-    
+    }  
 }
